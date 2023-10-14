@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>João Cardoso - Work</title>
+    <meta name="description"
+        content="João Generoso is an exploratory graphic designer unravelling new relationships between visual systems, creative coding and built space.
+        Graduated from University of São Paulo with an exchange program at University of Lisboa, he currently continues to investigate new mediums that allow for not only sharing design systems, but empowering other people to interact with them in a transformative and collaborative way.
+        Based in São Paulo, João has worked on award-winning projects, having collaborated with clients such as Nike, Sumaúma, Google, Melissa, Idea!Zarvos, Nortis, You inc, SP-Arte and IDB.">
+    <meta name="keywords"
+        content="design,creative coding,visual identity,graphic design,logo,branding,poster,generative art,programação criativa,identidade visual,design gráfico,arte generativa,cartaz">
+    <meta property="og:description"
+        content="João Generoso is an exploratory graphic designer unravelling new relationships between visual systems, creative coding and built space.
+        Graduated from University of São Paulo with an exchange program at University of Lisboa, he currently continues to investigate new mediums that allow for not only sharing design systems, but empowering other people to interact with them in a transformative and collaborative way.
+        Based in São Paulo, João has worked on award-winning projects, having collaborated with clients such as Nike, Sumaúma, Google, Melissa, Idea!Zarvos, Nortis, You inc, SP-Arte and IDB.">
+    <meta property="og:keywords"
+        content="design,creative coding,visual identity,graphic design,logo,branding,poster,generative art,programação criativa,identidade visual,design gráfico,arte generativa,cartaz">
+    <link rel="icon" href="Capturar.PNG">
+    <link rel="apple-touch-icon" href="Capturar.PNG">
+
+    <link rel="canonical" href="site.html" />
+    <link rel="alternate" hreflang="en" href="https://joaogeneroso.com" />
+    <link rel="alternate" hreflang="pt-br" href="https://joaogeneroso.com/pt-br/" />
+    <link rel="alternate" hreflang="x-default" href="https://joaogeneroso.com" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- <link href="https://uncuttype.wtf/typefaces/uncut-sans/uncut-sans.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="./site.css" type="text/css" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <nav class="nav-container" id="header">
+        <ul class="home">
+            <div><a href="site.html">João Pedro R. Cardoso</a></div>
+        </ul>
+        <ul class="pages">
+            <div><a href="site.html">work</div>
+            <div><a href="D:\vscode\site\about\teste.html">about</a></div>
+            <div><a href="https://computeel.org/computeel/">team</a></div>
+            <div><a href="https://www.instagram.com/joaopecardoso/" target="_blank">
+                    <img src="https://joaogeneroso.com/assets/icon-instagram.svg" class="icon"></a>
+            </div>
+            <div><a href="https://joaogeneroso.com/pt-br/" hreflang="pt-br" lang="pt-br">
+                    <img src="https://joaogeneroso.com/assets/icon-translate.svg" class="icon"></a>
+            </div>
+        </ul>
+    </nav>
+
+    <main class="projects">
+        <div class="project-container" id="mx2-elastic">
+            <div class="cover-container">
+                <a href="file:///home/jcardoso/Downloads/joaocardoso.gihub.io-main/mx2.html">
+                    <img src="Capturar.PNG"
+                        alt="mx2-elastic" loading="lazy">
+                </a>
+            </div>
+        </div>
+        <div class="project-container" id="demonumenta">
+            <div class="cover-container">
+                <a href="projects/demonumenta">
+                    <img src="raissa.PNG"
+                        alt="Demonumenta" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <nav class="nav-bottom">
+        <div class="nav-return">
+            <a href="#header"><img class="svg-arrow" src="https://joaogeneroso.com/assets/arrow-up.svg"></a>
+        </div>
+    </nav>
+
+    <div class="script-container">
+        <div id="cover-hover">
+            <script src="sketch.js"></script>
+            <script src="work.js"></script>
+        </div>
+        <script>
+            // adicionar borda quando há toque (mobile)
+            document.querySelectorAll('.cover-container img').forEach(element => {
+                element.addEventListener('touchstart', () => element.style.borderRadius = "20px");
+                element.addEventListener('touchend', () => element.style.borderRadius = "0");
+            });
+
+            // lazy loading
+            document.querySelectorAll('.cover-container').forEach(div => {
+                const loadImg = div.querySelector('img');
+
+                if (loadImg.complete) {
+                    loaded();
+                } else {
+                    loadImg.addEventListener('load', loaded);
+                }
+
+                function loaded() {
+                    div.classList.add('loaded');
+                }
+            });
+        </script>
+    </div>
+</body>
+
+</html>
