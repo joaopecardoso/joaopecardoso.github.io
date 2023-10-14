@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>João Cardoso - YSn3</title>
+    <link rel="icon" href="denisy.png">
+    <link rel="apple-touch-icon" href="denisy.png">
+
+    <link rel="canonical" href="https://joaopecardoso.github.io/" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- <link href="https://uncuttype.wtf/typefaces/uncut-sans/uncut-sans.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<<body>
+    <nav class="nav-container" id="header">
+        <ul class="home">
+            <div><a href="https://joaopecardoso.github.io/">João Pedro R. Cardoso</a></div>
+        </ul>
+        <ul class="pages">
+            <div><a href="https://joaopecardoso.github.io/">work</div>
+            <div><a href="https://joaopecardoso.github.io/about">about</a></div>
+            <div><a href="https://computeel.org/computeel/">team</a></div>
+            <div><a href="https://www.instagram.com/joaopecardoso/" target="_blank">
+                    <img src="https://joaogeneroso.com/assets/icon-instagram.svg" class="icon"></a>
+            </div>
+            <div><a href="https://joaogeneroso.com/pt-br/" hreflang="pt-br" lang="pt-br">
+                    <img src="https://joaogeneroso.com/assets/icon-translate.svg" class="icon"></a>
+            </div>
+        </ul>
+    </nav>
+
+    <main class="about-container">
+        <section class="project-section">
+            <div class="project-presentation">
+                <div class="project-name link-hover">
+                    <title class="project-h1">Review of YSn3 superconductivity properties</title>
+                    <a href="https://github.com/joaopecardoso"
+                        class="project-h1-link" target="_blank">GitHub profile <img class="svg-arrow"
+                            src="https://joaogeneroso.com/assets/arrow-upright.svg"></a>
+                </div>
+                <div class="project-info">
+                    <p>In this work, I'll try to teach how superconductivity properties run at DFT calculations.</p>
+                    <p> We'll investigate YSn3.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="projects">
+        <div class="image-container">
+            <img src="denisy.png" alt="denisy" loading="lazy">
+        </div>
+    </div>
+
+    <div class="credits-container">
+        <section class="credits-section">
+            <div class="project-presentation">
+                <div class="project-participation">
+                    <p>Production: Joao gatao</p>
+                    <p>Photography: Deus</p>
+                    <p>Year: 2022</p>
+                </div>
+                <div class="project-info">
+                    <p>My contribution: teste teste teste</p>
+                    <p></p>
+                    <p>How I did it: copiei mas nao fiz igual!.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <nav class="nav-bottom">
+        <div class="nav-previous">
+            <a href="demonumenta"><img class="svg-arrow" src="https://joaogeneroso.com/assets/arrow-left.svg"></a>
+        </div>
+        <div class="nav-return">
+            <a href="#header"><img class="svg-arrow" src="https://joaogeneroso.com/assets/arrow-up.svg"></a>
+        </div>
+        <div class="nav-next">
+            <a href="sumauma"><img class="svg-arrow" src="https://joaogeneroso.com/assets/arrow-right.svg"></a>
+        </div>
+    </nav>
+
+    <script>
+        document.querySelectorAll('.image-container').forEach(div => {
+            const loadImg = div.querySelector('img');
+
+            if (loadImg.complete) loaded();
+            else loadImg.addEventListener('load', loaded);
+
+            function loaded() { div.classList.add('loaded'); }
+        });
+    </script>
+</body>
+
+</html>
