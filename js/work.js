@@ -5,11 +5,11 @@ function workHover() {
         // covers[i].addEventListener('touchend', () => hoverText.innerHTML = "");
         switch (i) {
         case 0:
-            covers[i].addEventListener('mouseenter', ()=>hoverText.innerHTML = 'BOLINHA <img class="svg-arrow-hover" src="https://joaogeneroso.com/assets/arrow-upright-thin.svg">');
+            covers[i].addEventListener('mouseenter', ()=>hoverText.innerHTML = 'MX2 <img class="svg-arrow-hover" src="https://joaogeneroso.com/assets/arrow-upright-thin.svg">');
             // covers[i].addEventListener('touchstart', () => hoverText.innerHTML = 'Nike Ibirapuera <img class="svg-arrow-hover" src="https://joaogeneroso.com/assets/arrow-upright-thin.svg">');
             break;
         case 1:
-            covers[i].addEventListener('mouseenter', ()=>hoverText.innerHTML = 'RAISSA <img class="svg-arrow-hover" src="https://joaogeneroso.com/assets/arrow-upright-thin.svg">');
+            covers[i].addEventListener('mouseenter', ()=>hoverText.innerHTML = 'YSn3 <img class="svg-arrow-hover" src="https://joaogeneroso.com/assets/arrow-upright-thin.svg">');
             // covers[i].addEventListener('touchstart', () => hoverText.innerHTML = 'Sumaúma <img class="svg-arrow-hover" src="https://joaogeneroso.com/assets/arrow-upright-thin.svg">');
             break;
         case 2:
